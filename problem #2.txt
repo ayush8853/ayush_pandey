@@ -1,0 +1,13 @@
+import random
+import string
+
+def gen_paswd(length=6):
+    
+    character = string.ascii_uppercase + string.digits 
+    
+    password = ''.join(random.choice(character) for _ in range(length))
+    return password
+
+
+strng_paswd = gen_paswd()
+print("Generated password:", strng_paswd)
